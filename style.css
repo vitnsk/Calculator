@@ -24,8 +24,7 @@ width: 420px;
 font-size: 26px;
 font-weight: bold;
 background-color: #cccbcb;
-
-/* box-sizing: border-box; */
+pointer-events: none;
 }
 
 .buttonall{

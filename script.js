@@ -9,7 +9,7 @@
 
 function backspace() {
     let display = document.querySelector("#display");
-     display.value=display.value.slice(0,-1);
+    display.value=display.value.slice(0,-1);
 }
  function cleardisp(){
     let display = document.querySelector("#display");
@@ -25,20 +25,16 @@ function backspace() {
     cl='cl';
  }
 
-
-
 function valmem(operatorKey){
-    int1=Number(znach);
-    
+    int1=Number(znach);    
     operator=operatorKey;
     screen.value=znach;
     cl='cl';
 }
 
-function res(){
+function resultat(){
     int2=Number(znach);  
     cleardisp();
-
     
     switch(operator){
     case '+':
@@ -56,16 +52,29 @@ function res(){
     }
     display.value= result;
 
-    znach=result;
-   
+    znach=result;   
 }
+
 function val(num){
     if(cl=='cl')
     {
         cleardisp();
         cl='';
     }
-    let display = document.querySelector("#display");
-    display.value=display.value+num;
+  let display = document.querySelector("#display");
+  display.value=display.value+num;
+  znach=display.value;
+}
+
+function negativenum(){
+    cleardisp(); 
+    let minus= znach.slice(0,1);
+    if(minus!='-')
+    {
+    display.value = '-'+znach;    
+    }
+    else{
+        display.value=znach.slice(1);
+    }
     znach=display.value;
 }
