@@ -1,9 +1,11 @@
 
- let znach;
- let int1;
- let int2;
- let result;
- let operator;
+ let znach="";
+ let int1=0;
+ let int2=0;
+ let result=0;
+ let operator="";
+ let cl='cl';
+ display.value='0';
 
 function backspace() {
     let display = document.querySelector("#display");
@@ -14,16 +16,30 @@ function backspace() {
     display.value="";
  }
 
+ function resertcalc(){
+    cleardisp();
+    imt1=0;
+    int2=0;
+    znach=0;
+    display.value='0';
+    cl='cl';
+ }
+
+
+
 function valmem(operatorKey){
     int1=Number(znach);
-    cleardisp();
+    
     operator=operatorKey;
-
+    screen.value=znach;
+    cl='cl';
 }
 
 function res(){
     int2=Number(znach);  
     cleardisp();
+
+    
     switch(operator){
     case '+':
     result=int1+int2;
@@ -39,10 +55,17 @@ function res(){
     break;
     }
     display.value= result;
+
+    znach=result;
    
 }
 function val(num){
+    if(cl=='cl')
+    {
+        cleardisp();
+        cl='';
+    }
     let display = document.querySelector("#display");
     display.value=display.value+num;
-    znach=Number(display.value);
+    znach=display.value;
 }
