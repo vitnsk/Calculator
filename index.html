@@ -10,38 +10,40 @@
     <div id="calc">  
 
         
-		<div class="screen"></div>
+		
 
+        <input output="text" id="display">
+        
         <div class="button">
     
-    <button>C</button>
-    <button>CE</button>
+    <button onclick="cleardisp()">C</button>
+    <button onclick="backspace()">CE</button>
     <div> </div>
     <button>/</button>
 
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
+    <button onclick="val(7)">7</button>
+    <button onclick="val(8)">8</button>
+    <button onclick="val(9)">9</button>
     <button>*</button>
 
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
+    <button onclick="val(4)">4</button>
+    <button onclick="val(5)">5</button>
+    <button onclick="val(6)">6</button>
     <button>-</button>
 
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
+    <button onclick="val(1)">1</button>
+    <button onclick="val(2)">2</button>
+    <button onclick="val(3)">3</button>
     <button>+</button>
 
     <button>+/-</button>
-    <button>0</button>
+    <button onclick="val(0)">0</button>
     <button>.</button>
     <button>=</button>
 
          </div>
 
-
+         
 
     </div>
     <script src="script.js"></script>

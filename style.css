@@ -11,15 +11,15 @@ position:relative;
 width: 440px;
 background: #000;
 padding-left: 10px;
-padding-bottom: 10px;
+padding-bottom: 20px;
 height:370px;
 }
 
-.screen{
+#display{
 
 height: 50px;
 margin-top: 10px;
-width: 430px;
+width: 420px;
 
 background-color: #fff;
 
