@@ -1,19 +1,16 @@
 body{
     display: flex; 
-    margin: 100px 100px;
-    /* width: 1440px;   */
-    
+    margin: 5% 0% 0% 10%;    
+    background-color: rgb(245, 245, 245);
 }
 
 #calc{
-    /* display: flex;  */
 position:relative;
-width: 440px;
-background: #313553;
+width: 440px; 
 padding-left: 10px;
 padding-bottom: 20px;
-height:370px;
-
+ height:370px; 
+background-color: rgb(78, 31, 74);
 }
 
 #display {
@@ -29,7 +26,7 @@ pointer-events: none;
 
 .buttonall{
     display: grid;
-    gap: 10px 10px;
+    gap: 10px 10px;    
     grid-template-rows: repeat(5,50px);
     grid-template-columns: repeat(4,100px);
     font-size: 20px;
