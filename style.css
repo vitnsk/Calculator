@@ -1,41 +1,84 @@
 body{
-    display: flex; 
+    /* display: flex;  */
     margin: 5% 0% 0% 10%;    
     background-color: rgb(245, 245, 245);
 }
 
-#calc{
-position:relative;
-width: 440px; 
-padding-left: 10px;
-padding-bottom: 20px;
- height:370px; 
-background-color: rgb(78, 31, 74);
-}
 
-#display {
-
-height: 50px;
-margin-top: 10px;
-width: 420px;
-font-size: 26px;
-font-weight: bold;
-background-color: #cccbcb;
-pointer-events: none;
-}
-
-.buttonall{
-    display: grid;
-    gap: 10px 10px;    
-    grid-template-rows: repeat(5,50px);
-    grid-template-columns: repeat(4,100px);
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-button{
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #aeadad;
-}
+    #calc{
+        position:relative;
+        width: 440px; 
+        padding-left: 10px;
+        padding-bottom: 20px;
+         height:370px; 
+        background-color: rgb(78, 31, 74);
+        }
+        
+        #display {
+        
+        height: 50px;
+        margin-top: 10px;
+        width: 420px;
+        font-size: 26px;
+        font-weight: bold;
+        background-color: #cccbcb;
+        pointer-events: none;
+        }
+        
+        .buttonall{
+            display: grid;
+            gap: 10px 10px;    
+            grid-template-rows: repeat(5,50px);
+            grid-template-columns: repeat(4,100px);
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        button{
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #aeadad;
+        }
+    
+        @media screen and (max-width: 500px)  {            
+            #calc{
+            position:relative;           
+            width: 90%; 
+            padding-left: 1%;
+            padding-bottom: 20px;
+             height:370px; 
+            background-color: rgb(78, 31, 74);
+            }
+            
+            #display {
+            
+            height: 50px;
+            margin-top: 10px;         
+            width: 96%; 
+            font-size: 26px;
+            font-weight: bold;
+            background-color: #cccbcb;
+            pointer-events: none;
+            }
+            
+            .buttonall{
+                display: grid;
+                gap: 10px 2%;    
+                grid-template-rows: repeat(5,27%);
+                grid-template-columns: repeat(4,22.7%);
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            button{
+                font-size: 20px;
+                font-weight: bold;
+                background-color: #aeadad;
+            }
+            
+            }
+    
